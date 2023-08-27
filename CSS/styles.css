@@ -4,8 +4,88 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  order: 10001 !important;
+  background: #fff;
+}
+
+nav {
+  padding: 15px 10%;
+  background: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.lg-menu {
+  display: flex;
+}
+
+.lg-menu a {
+  padding: 8px 18px;
+  margin: 0 15px;
+  color: #333;
+  border-radius: 8px;
+  transition: all 0.32s ease-in;
+}
+
+.lg-menu a:hover {
+  background: #dfe9f4;
+}
+
+.menuBtn {
+  display: none;
+}
+.menuBtn i {
+  color: #333;
+  font-size: 24px;
+}
+
+.mobile-menu {
+  background-color: #fff;
+}
+.mobile-menu a {
+  display: block;
+  padding: 8px 0px;
+  margin-top: 12px;
+  color: #333;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  section {
+    padding: 60px 5%;
+  }
+  nav {
+    padding: 15px 5%;
+  }
+  .lg-menu {
+    display: none;
+  }
+  .menuBtn {
+    display: block;
+  }
 }
